@@ -31,6 +31,7 @@
   DEFINE TPM2_ENABLE             = FALSE
   DEFINE TPM2_CONFIG_ENABLE      = FALSE
   DEFINE DEBUG_ON_SERIAL_PORT    = TRUE
+  DEFINE ACPIVIEW_ENABLE         = TRUE
 
   #
   # Network definition
