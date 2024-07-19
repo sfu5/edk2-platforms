@@ -202,6 +202,10 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
   INF MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe.inf
 
+  INF  OvmfPkg/VirtioBlkDxe/VirtioBlk.inf
+  INF  OvmfPkg/VirtioPciDeviceDxe/VirtioPciDeviceDxe.inf
+  INF  OvmfPkg/VirtioFsDxe/VirtioFsDxe.inf
+
   #
   # UEFI application (Shell Embedded Boot Loader)
   #
@@ -276,6 +280,10 @@ READ_LOCK_STATUS   = TRUE
   # Ramdisk support
   #
   INF MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
+
+  FILE APPLICATION = a912f198-7f0e-4803-b908-b757b806ec83 {
+    SECTION PE32 = Build/Shell/DEBUG_GCC49/AARCH64/Bsa.efi
+  }
 
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 16
